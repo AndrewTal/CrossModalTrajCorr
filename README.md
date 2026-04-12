@@ -45,7 +45,7 @@ from trident.patch_encoder_models import encoder_factory
 model = encoder_factory('conch_v15', weights_path=custom_ckpt_path)
 ```
 
-The extracted features can be directly stored in the HEST .h5 file:
+You can directly use the images stored in the .h5 files under the HEST patches/ directory for feature extraction. These correspond to the fixed-resolution spots described in our paper. The extracted features can then be appended to the same .h5 file:
 ```python
 import h5py
 
