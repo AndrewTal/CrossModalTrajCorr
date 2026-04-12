@@ -1,6 +1,10 @@
 <!-- Title -->
 <div align="center">
 <h1>Quantifying Shared Information Between Morphology and Spatial Transcriptomics via Cross-Modal Trajectory Correlation</h1>
+
+<!-- Short description -->
+Pre-print available on arXiv.
+
 </div>
 
 # HEST Data Download Link
