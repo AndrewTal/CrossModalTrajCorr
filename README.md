@@ -45,6 +45,16 @@ from trident.patch_encoder_models import encoder_factory
 model = encoder_factory('conch_v15', weights_path=custom_ckpt_path)
 ```
 
+The extracted features can be directly stored in the HEST .h5 file:
+```python
+import h5py
+
+with h5py.File(h5_path, 'a') as f:
+    f.create_dataset(f"{model_name}_features", data=ext_feats)
+    print(f"{model_name}_features appended!")
+```
+
+
 # Pathology to Spatial Transcriptomics
 For the pathology-to-spatial transcriptomics prediction task, we adopt the method proposed in the [MISO](https://www.nature.com/articles/s41467-025-66691-y) paper.
 The official implementation is available at [here](https://github.com/owkin/miso_code).
