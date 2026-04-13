@@ -37,25 +37,26 @@ The official implementation is available at [here](https://github.com/owkin/miso
 
 # HEST Data Download Link
 
-| Dataset                  | Download Link |
-|--------------------------|--------------|
-| HEST-1k                     | [Link](https://github.com/mahmoodlab/HEST) |
+| Dataset                  |  Publication | Download Link |
+|--------------------------|--------------|--------------|
+| HEST-1k                  | NIPS-26  | [Link](https://github.com/mahmoodlab/HEST) |
 
 
 # Pretrained Model Download Link
 Note: Access to each model must be requested before downloading.
-| Dataset                  | Download Link |
-|--------------------------|--------------|
-| Resnet18                 | [Link](https://huggingface.co/timm) |
-| ViT-B/16                 | [Link](https://huggingface.co/timm) |
-| CTransPath               | [Link](https://github.com/Xiyue-Wang/TransPath) |
-| CONCH                    | [Link](https://huggingface.co/MahmoodLab/CONCH/tree/main) |
-| CONCHv1.5                | [Link](https://huggingface.co/MahmoodLab/conchv1_5) |
-| Prov-GiagPath            | [Link](https://huggingface.co/prov-gigapath/prov-gigapath) |
-| UNI                      | [Link](https://huggingface.co/MahmoodLab/UNI) |
-| UNI2-h                   | [Link](https://huggingface.co/MahmoodLab/UNI2-h) |
-| Virchow                  | [Link](https://huggingface.co/paige-ai/Virchow) |
-| Virchow2                 | [Link](https://huggingface.co/paige-ai/Virchow2) |
+
+| Dataset                  |  Publication | Download Link |
+|--------------------------|--------------|--------------|
+| Resnet18                 | CVPR 16 |[Link](https://huggingface.co/timm) |
+| ViT-B/16                 | ICLR 21 |[Link](https://huggingface.co/timm) |
+| CTransPath               | MedIA 22 |[Link](https://github.com/Xiyue-Wang/TransPath) |
+| CONCH                    | Nat. Med. 24 |[Link](https://huggingface.co/MahmoodLab/CONCH/tree/main) |
+| CONCHv1.5                | - |[Link](https://huggingface.co/MahmoodLab/conchv1_5) |
+| Prov-GiagPath            | Nature 24 |[Link](https://huggingface.co/prov-gigapath/prov-gigapath) |
+| UNI                      | Nat. Med. 24 |[Link](https://huggingface.co/MahmoodLab/UNI) |
+| UNI2-h                   | - |[Link](https://huggingface.co/MahmoodLab/UNI2-h) |
+| Virchow                  | Nat. Med. 24 |[Link](https://huggingface.co/paige-ai/Virchow) |
+| Virchow2                 | - |[Link](https://huggingface.co/paige-ai/Virchow2) |
 
 
 # How to cite
