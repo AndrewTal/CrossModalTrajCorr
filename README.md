@@ -29,6 +29,12 @@ For standard architectures such as ResNet18 and ViT-B/16, we leverage the [timm]
 python preprocessing/feature_extractor.py
 ```
 
+
+# Pathology to Spatial Transcriptomics
+For the pathology-to-spatial transcriptomics prediction task, we adopt the method proposed in the [MISO](https://www.nature.com/articles/s41467-025-66691-y) paper.
+The official implementation is available at [here](https://github.com/owkin/miso_code).
+
+
 # HEST Data Download Link
 
 | Dataset                  | Download Link |
@@ -51,11 +57,6 @@ Note: Access to each model must be requested before downloading.
 | Virchow                  | [Link](https://huggingface.co/paige-ai/Virchow) |
 | Virchow2                 | [Link](https://huggingface.co/paige-ai/Virchow2) |
 
-
-
-# Pathology to Spatial Transcriptomics
-For the pathology-to-spatial transcriptomics prediction task, we adopt the method proposed in the [MISO](https://www.nature.com/articles/s41467-025-66691-y) paper.
-The official implementation is available at [here](https://github.com/owkin/miso_code).
 
 # How to cite
 If you find our work useful in your research or if you use parts of this code, please consider citing our papers:
