@@ -30,7 +30,7 @@ python preprocessing/feature_extractor.py
 ```
 
 
-## Filtered data processing results
+## Filtered data
 
 Run the code to process the filtered sample data:
 
