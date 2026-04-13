@@ -18,12 +18,15 @@ pip install -r requirements.txt
 # Patch-based Feature Extraction
 Please refer to preprocessing/data for the dataset format. Note that you need to download all required datasets and pretrained models by yourself using the links provided at the end, and update the corresponding paths before running the scripts.
 
-For standard architectures such as ResNet18 and ViT-B/16, we leverage the [timm](https://huggingface.co/timm) library. For other specialized models, we use the [Trident](https://github.com/mahmoodlab/TRIDENT) framework. You can use the following commands to extract image patches from the HEST dataset, either at the spot size or at a fixed resolution, and then extract features:
-
+You can use the following commands to extract image patches from the HEST dataset, either at the spot size or at a fixed resolution:
 ```python
 python preprocessing/patch_extractor.py
-python preprocessing/feature_extractor.py
+```
 
+For standard architectures such as ResNet18 and ViT-B/16, we leverage the [timm](https://huggingface.co/timm) library. For other specialized models, we use the [Trident](https://github.com/mahmoodlab/TRIDENT) framework. You can use the following commands to extract features:
+
+```python
+python preprocessing/feature_extractor.py
 ```
 
 # HEST Data Download Link
