@@ -7,6 +7,8 @@ Pre-print available on arXiv.
 
 </div>
 
+Note that you need to download all required datasets and pretrained models by yourself using the links provided at the end, and update the corresponding paths before running the scripts.
+
 ## How to install
 Follow the steps below to create and activate the environment, and install the project dependencies:
 ```python
@@ -15,20 +17,18 @@ conda activate trajspace
 pip install -r requirements.txt
 ```
 
-## Patch-based feature extraction
-Note that you need to download all required datasets and pretrained models by yourself using the links provided at the end, and update the corresponding paths before running the scripts.
-
+## Patch extraction
 You can use the following commands to extract image patches from the HEST dataset, either at the spot size or at a fixed resolution:
 ```python
 python preprocessing/patch_extractor.py
 ```
 
+## Feature extraction
 For standard architectures such as ResNet18 and ViT-B/16, we leverage the [timm](https://huggingface.co/timm) library. For other specialized models, we use the [Trident](https://github.com/mahmoodlab/TRIDENT) framework. You can use the following commands to extract features:
 
 ```python
 python preprocessing/feature_extractor.py
 ```
-
 
 ## Filtered data
 
