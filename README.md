@@ -16,7 +16,7 @@ pip install -r requirements.txt
 ```
 
 # Patch-based Feature Extraction
-Please refer to preprocessing/data for the dataset format. Note that you need to download all required datasets and pretrained models by yourself using the links provided at the end, and update the corresponding paths before running the scripts.
+Note that you need to download all required datasets and pretrained models by yourself using the links provided at the end, and update the corresponding paths before running the scripts.
 
 You can use the following commands to extract image patches from the HEST dataset, either at the spot size or at a fixed resolution:
 ```python
