@@ -15,7 +15,7 @@ conda activate trajspace
 pip install -r requirements.txt
 ```
 
-## Patch-based Feature Extraction
+## Patch-based feature extraction
 Note that you need to download all required datasets and pretrained models by yourself using the links provided at the end, and update the corresponding paths before running the scripts.
 
 You can use the following commands to extract image patches from the HEST dataset, either at the spot size or at a fixed resolution:
@@ -30,7 +30,7 @@ python preprocessing/feature_extractor.py
 ```
 
 
-## Filtered Data Processing Results
+## Filtered data processing results
 
 Run the code to process the filtered sample data:
 
@@ -47,7 +47,7 @@ python pesudotime/Cal_PT.py
 ```
 
 
-## Pseudotime-Based Gene Enrichment
+## Pseudotime-based gene enrichment
 
 Enrichment of genes based on pseudo-time trajectory:
 
@@ -64,19 +64,19 @@ python pesudotime/Gene_Expression.py
 ```
 
 
-## Pathology to Spatial Transcriptomics
+## Pathology to spatial transcriptomics
 For the pathology-to-spatial transcriptomics prediction task, we adopt the method proposed in the [MISO](https://www.nature.com/articles/s41467-025-66691-y) paper.
 The official implementation is available at [here](https://github.com/owkin/miso_code).
 
 
-## HEST Data Download Link
+## HEST data download link
 
 | Dataset                  |  Publication | Download Link |
 |--------------------------|--------------|--------------|
 | HEST-1k                  | NIPS-26  | [Link](https://github.com/mahmoodlab/HEST) |
 
 
-## Pretrained Model Download Link
+## Pretrained model download link
 Note: Access to each model must be requested before downloading.
 
 | Dataset                  |  Publication | Download Link |
@@ -97,7 +97,7 @@ Note: Access to each model must be requested before downloading.
 If you find our work useful in your research or if you use parts of this code, please consider citing our papers:
 ```python
 @article{,
-  title={},
+  title={Quantifying Shared Information Between Morphology and Spatial Transcriptomics via Cross-Modal Trajectory Correlation},
   author={},
   journal={},
   year={2026}
