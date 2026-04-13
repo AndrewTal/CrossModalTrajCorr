@@ -7,7 +7,7 @@ Pre-print available on arXiv.
 
 </div>
 
-# How to install
+## How to install
 Follow the steps below to create and activate the environment, and install the project dependencies:
 ```python
 conda create --name trajspace python=3.10
@@ -15,7 +15,7 @@ conda activate trajspace
 pip install -r requirements.txt
 ```
 
-# Patch-based Feature Extraction
+## Patch-based Feature Extraction
 Note that you need to download all required datasets and pretrained models by yourself using the links provided at the end, and update the corresponding paths before running the scripts.
 
 You can use the following commands to extract image patches from the HEST dataset, either at the spot size or at a fixed resolution:
@@ -64,19 +64,19 @@ python pesudotime/Gene_Expression.py
 ```
 
 
-# Pathology to Spatial Transcriptomics
+## Pathology to Spatial Transcriptomics
 For the pathology-to-spatial transcriptomics prediction task, we adopt the method proposed in the [MISO](https://www.nature.com/articles/s41467-025-66691-y) paper.
 The official implementation is available at [here](https://github.com/owkin/miso_code).
 
 
-# HEST Data Download Link
+## HEST Data Download Link
 
 | Dataset                  |  Publication | Download Link |
 |--------------------------|--------------|--------------|
 | HEST-1k                  | NIPS-26  | [Link](https://github.com/mahmoodlab/HEST) |
 
 
-# Pretrained Model Download Link
+## Pretrained Model Download Link
 Note: Access to each model must be requested before downloading.
 
 | Dataset                  |  Publication | Download Link |
@@ -93,7 +93,7 @@ Note: Access to each model must be requested before downloading.
 | Virchow2                 | - |[Link](https://huggingface.co/paige-ai/Virchow2) |
 
 
-# How to cite
+## How to cite
 If you find our work useful in your research or if you use parts of this code, please consider citing our papers:
 ```python
 @article{,
