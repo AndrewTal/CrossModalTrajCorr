@@ -7,6 +7,25 @@ Pre-print available on arXiv.
 
 </div>
 
+# How to install
+Follow the steps below to create and activate the environment, and install the project dependencies:
+```python
+conda create --name pseudotime python=3.9
+conda activate pseudotime
+pip install -r requirements.txt
+```
+
+# Patch-based Feature Extraction
+Please refer to preprocessing/data for the dataset format. Note that you need to download all required datasets and pretrained models by yourself using the links provided at the end, and update the corresponding paths before running the scripts.
+
+For standard architectures such as ResNet18 and ViT-B/16, we leverage the [timm](https://huggingface.co/timm) library. For other specialized models, we use the [Trident](https://github.com/mahmoodlab/TRIDENT) framework. You can use the following commands to extract image patches from the HEST dataset, either at the spot size or at a fixed resolution, and then extract features:
+
+```python
+python preprocessing/patch_extractor.py
+python preprocessing/feature_extractor.py
+
+```
+
 # HEST Data Download Link
 
 | Dataset                  | Download Link |
@@ -29,30 +48,6 @@ Note: Access to each model must be requested before downloading.
 | Virchow                  | [Link](https://huggingface.co/paige-ai/Virchow) |
 | Virchow2                 | [Link](https://huggingface.co/paige-ai/Virchow2) |
 
-
-# Patch-based Feature Extraction
-For standard architectures such as ResNet18 and ViT-B/16, we leverage the [timm](https://huggingface.co/timm) library:
-```python
-import timm
-
-model = timm.create_model('resnet18', pretrained=True)
-```
-
-For other specialized models, we use the [Trident](https://github.com/mahmoodlab/TRIDENT) framework:
-```python
-from trident.patch_encoder_models import encoder_factory
-
-model = encoder_factory('conch_v15', weights_path=custom_ckpt_path)
-```
-
-You can directly use the images stored in the .h5 files under the HEST patches/ directory for feature extraction. These correspond to the fixed-resolution spots described in our paper. The extracted features can then be appended to the same .h5 file:
-```python
-import h5py
-
-with h5py.File(h5_path, 'a') as f:
-    f.create_dataset(f"{model_name}_features", data=ext_feats)
-    print(f"{model_name}_features appended!")
-```
 
 
 # Pathology to Spatial Transcriptomics
