@@ -10,7 +10,7 @@ Pre-print available on arXiv.
 # How to install
 Follow the steps below to create and activate the environment, and install the project dependencies:
 ```python
-conda create --name pseudotime python=3.9
+conda create --name pseudotime python=3.10
 conda activate pseudotime
 pip install -r requirements.txt
 ```
