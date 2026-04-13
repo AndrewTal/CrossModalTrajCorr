@@ -10,8 +10,8 @@ Pre-print available on arXiv.
 # How to install
 Follow the steps below to create and activate the environment, and install the project dependencies:
 ```python
-conda create --name pseudotime python=3.10
-conda activate pseudotime
+conda create --name trajspace python=3.10
+conda activate trajspace
 pip install -r requirements.txt
 ```
 
@@ -27,6 +27,40 @@ For standard architectures such as ResNet18 and ViT-B/16, we leverage the [timm]
 
 ```python
 python preprocessing/feature_extractor.py
+```
+
+
+## Filtered Data Processing Results
+
+Run the code to process the filtered sample data:
+
+```
+python pesudotime/dataset_process.py
+```
+
+## Pseudotime calculation
+
+The sample is based on ST data and pseudotime calculation based on image features:
+
+```
+python pesudotime/Cal_PT.py
+```
+
+
+## Pseudotime-Based Gene Enrichment
+
+Enrichment of genes based on pseudo-time trajectory:
+
+```
+python pesudotime/Gene_Enrich.py
+```
+
+
+## Visualized genes
+The spatial distribution of visualized genes:
+
+```
+python pesudotime/Gene_Expression.py
 ```
 
 
