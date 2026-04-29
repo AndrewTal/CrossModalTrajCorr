@@ -79,7 +79,7 @@ The official implementation is available at [here](https://github.com/owkin/miso
 ## Pretrained model download link
 Note: Access to each model must be requested before downloading.
 
-| Dataset                  |  Publication | Download Link |
+| Methods                  |  Publication | Download Link |
 |--------------------------|--------------|--------------|
 | Resnet18                 | CVPR 16 |[Link](https://huggingface.co/timm) |
 | ViT-B/16                 | ICLR 21 |[Link](https://huggingface.co/timm) |
