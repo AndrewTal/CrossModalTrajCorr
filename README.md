@@ -2,9 +2,6 @@
 <div align="center">
 <h1>Quantifying Shared Information Between Morphology and Spatial Transcriptomics via Cross-Modal Trajectory Correlation</h1>
 
-% <!-- Short description -->
-% Pre-print available on arXiv.
-
 </div>
 
 Note that you need to download all required datasets and pretrained models by yourself using the links provided at the end, and update the corresponding paths before running the scripts.
@@ -91,13 +88,6 @@ Note: Access to each model must be requested before downloading.
 | UNI2-h                   | - |[Link](https://huggingface.co/MahmoodLab/UNI2-h) |
 | Virchow                  | Nat. Med. 24 |[Link](https://huggingface.co/paige-ai/Virchow) |
 | Virchow2                 | - |[Link](https://huggingface.co/paige-ai/Virchow2) |
-
-
-## How to cite
-If you find our work useful in your research or if you use parts of this code, please consider citing our papers:
-```python
-@article{,
-  title={Quantifying Shared Information Between Morphology and Spatial Transcriptomics via Cross-Modal Trajectory Correlation},
   author={},
   journal={},
   year={2026}
