@@ -88,8 +88,4 @@ Note: Access to each model must be requested before downloading.
 | UNI2-h                   | - |[Link](https://huggingface.co/MahmoodLab/UNI2-h) |
 | Virchow                  | Nat. Med. 24 |[Link](https://huggingface.co/paige-ai/Virchow) |
 | Virchow2                 | - |[Link](https://huggingface.co/paige-ai/Virchow2) |
-  author={},
-  journal={},
-  year={2026}
-}
-```
+
